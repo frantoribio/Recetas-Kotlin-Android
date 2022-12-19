@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="es.frantoribio.recetas.ui.HomeFragment"
+        android:label="@string/fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_editRecetaFragment"
+            app:destination="@id/editRecetaFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_createRecetaFragment"
+            app:destination="@id/createRecetaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createRecetaFragment"
+        android:name="es.frantoribio.recetas.ui.CreateRecetaFragment"
+        android:label="@string/fragment_create_receta"
+        tools:layout="@layout/fragment_create_receta" >
+        <action
+            android:id="@+id/action_createRecetaFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editRecetaFragment"
+        android:name="es.frantoribio.recetas.ui.EditRecetaFragment"
+        android:label="@string/fragment_edit_receta"
+        tools:layout="@layout/fragment_edit_receta" >
+        <action
+            android:id="@+id/action_editRecetaFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <argument
+            android:name="data"
+            app:argType="es.frantoribio.recetas.model.Receta" />
+    </fragment>
+</navigation>

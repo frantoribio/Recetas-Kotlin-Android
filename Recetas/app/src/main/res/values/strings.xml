@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Recetas</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_home">Recetas</string>
+    <string name="fragment_create_receta">Add Receta</string>
+    <string name="fragment_edit_receta">Edit Receta</string>
+    <string name="name">Name....</string>
+    <string name="money">Money...</string>
+    <string name="gift">Gift...</string>
+    <string name="notes">Notes...</string>
+    <string name="nombre">Nombre</string>
+    <string name="producto">Producto</string>
+    <string name="categoria">Categoría</string>
+    <string name="web_url">Web URL</string>
+    <string name="me_gusta">Me gusta</string>
+    <string name="no_me_gusta">No me gusta</string>
+    <string name="_04_diciemb_2022">04 Diciemb 2022</string>
+</resources>
